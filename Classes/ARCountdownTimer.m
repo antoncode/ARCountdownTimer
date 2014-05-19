@@ -70,17 +70,17 @@
                                                         fromDate:now
                                                           toDate:countDownToThisDate
                                                          options:0];
-        _hoursToGoLabel.text = [NSString stringWithFormat:@"%02ld", (componentsHours.hour%24)];
+        _hoursToGoLabel.text = [NSString stringWithFormat:@"%02ld", (long)(componentsHours.hour%24)];
         NSDateComponents *componentsMinutes = [calendar components:NSMinuteCalendarUnit
                                                           fromDate:now
                                                             toDate:countDownToThisDate
                                                            options:0];
-        _minutesToGoLabel.text = [NSString stringWithFormat:@"%02ld", (componentsMinutes.minute%60)];
+        _minutesToGoLabel.text = [NSString stringWithFormat:@"%02ld", (long)(componentsMinutes.minute%60)];
         NSDateComponents *componentsSeconds = [calendar components:NSSecondCalendarUnit
                                                           fromDate:now
                                                             toDate:countDownToThisDate
                                                            options:0];
-        _secondsToGoLabel.text = [NSString stringWithFormat:@"%02ld", (componentsSeconds.second%60)];
+        _secondsToGoLabel.text = [NSString stringWithFormat:@"%02ld", (long)(componentsSeconds.second%60)];
         
     } else {
         _daysToGoLabel.text = @"00";
