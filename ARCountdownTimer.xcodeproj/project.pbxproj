@@ -35,8 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A6338AB192AA4C900C6F072 /* ARCountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARCountdownTimer.h; path = Classes/ARCountdownTimer.h; sourceTree = "<group>"; };
-		3A6338AC192AA4C900C6F072 /* ARCountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARCountdownTimer.m; path = Classes/ARCountdownTimer.m; sourceTree = "<group>"; };
+		3A6338AB192AA4C900C6F072 /* ARCountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARCountdownTimer.h; path = ../Classes/ARCountdownTimer.h; sourceTree = "<group>"; };
+		3A6338AC192AA4C900C6F072 /* ARCountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARCountdownTimer.m; path = ../Classes/ARCountdownTimer.m; sourceTree = "<group>"; };
 		3ABCBB3319251729006B7D17 /* ARCountdownTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCountdownTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABCBB3619251729006B7D17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3ABCBB3819251729006B7D17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
