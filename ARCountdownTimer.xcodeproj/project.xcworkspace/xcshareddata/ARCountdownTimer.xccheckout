@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>63398D50-77F8-4F5F-828F-79F34011291D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ARCountdownTimer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>236B6E1B-F87F-432E-8FF2-7804256F2BDF</key>
+		<string>ssh://github.com/antoncode/ARCountdownTimer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ARCountdownTimer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>236B6E1B-F87F-432E-8FF2-7804256F2BDF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/antoncode/ARCountdownTimer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>236B6E1B-F87F-432E-8FF2-7804256F2BDF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>236B6E1B-F87F-432E-8FF2-7804256F2BDF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ARCountdownTimerGit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
