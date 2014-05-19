@@ -7,6 +7,7 @@
 //
 
 #import "ARViewController.h"
+#import "ARCountdownTimer.h"
 
 @interface ARViewController ()
 
@@ -23,54 +24,11 @@
 {
     [super viewDidLoad];
     
-    NSTimer *timer = [NSTimer new];
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
+    ARCountdownTimer *countDownTimer = [[ARCountdownTimer alloc] initWithDaysLabel:_daysToGoLabel
+                                                                        hoursLabel:_hoursToGoLabel
+                                                                      minutesLabel:_minutesToGoLabel
+                                                                   andSecondsLabel:_secondsToGoLabel];
+    [countDownTimer startWithCountDownDate:[NSDate dateWithTimeIntervalSinceNow:1000000]];
 }
-
-- (void)updateTimer
-{
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDate *now = [NSDate date];
-    
-    NSDateComponents *countDownToThisDateComponents = [NSDateComponents new];
-    [countDownToThisDateComponents setYear:2014];
-    [countDownToThisDateComponents setMonth:8];
-    [countDownToThisDateComponents setDay:20];
-    [countDownToThisDateComponents setHour:12];
-    [countDownToThisDateComponents setMinute:0];
-    [countDownToThisDateComponents setSecond:0];
-    NSDate *countDownToThisDate = [calendar dateFromComponents:countDownToThisDateComponents];
-    
-    if ([now compare:countDownToThisDate] == NSOrderedAscending)
-    {   // now is earlier than countDownToThisDate
-        NSDateComponents *componentsDays = [calendar components:NSDayCalendarUnit
-                                                       fromDate:now
-                                                         toDate:countDownToThisDate
-                                                        options:0];
-        _daysToGoLabel.text = [NSString stringWithFormat:@"%02ld", (long)(componentsDays.day)];
-        NSDateComponents *componentsHours = [calendar components:NSHourCalendarUnit
-                                                        fromDate:now
-                                                          toDate:countDownToThisDate
-                                                         options:0];
-        _hoursToGoLabel.text = [NSString stringWithFormat:@"%02ld", (componentsHours.hour%24)];
-        NSDateComponents *componentsMinutes = [calendar components:NSMinuteCalendarUnit
-                                                          fromDate:now
-                                                            toDate:countDownToThisDate
-                                                           options:0];
-        _minutesToGoLabel.text = [NSString stringWithFormat:@"%02ld", (componentsMinutes.minute%60)];
-        NSDateComponents *componentsSeconds = [calendar components:NSSecondCalendarUnit
-                                                          fromDate:now
-                                                            toDate:countDownToThisDate
-                                                           options:0];
-        _secondsToGoLabel.text = [NSString stringWithFormat:@"%02ld", (componentsSeconds.second%60)];
-
-    } else {
-        _daysToGoLabel.text = @"00";
-        _hoursToGoLabel.text = @"00";
-        _minutesToGoLabel.text = @"00";
-        _secondsToGoLabel.text = @"00";
-    }
-}
-
 
 @end
